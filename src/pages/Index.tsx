@@ -37,7 +37,7 @@ const Index = () => {
   const totalSaved = budget - totalSpent;
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen" style={{ background: 'var(--gradient-background)' }}>
       <DashboardHeader />
       
       <main className="container mx-auto p-6 space-y-8">
