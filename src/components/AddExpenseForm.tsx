@@ -12,7 +12,7 @@ interface AddExpenseFormProps {
   onAddExpense: (expense: Omit<Expense, "id">) => void;
 }
 
-const categories = ["Food", "Transportation", "Entertainment", "Bills", "Shopping", "Healthcare", "Other"];
+const categories = ["Food", "Transportation", "Entertainment", "Bills", "Shopping", "Healthcare", "Investment", "Other"];
 
 export const AddExpenseForm = ({ onAddExpense }: AddExpenseFormProps) => {
   const [title, setTitle] = useState("");

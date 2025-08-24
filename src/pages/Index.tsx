@@ -21,6 +21,7 @@ const Index = () => {
     { id: "3", title: "Netflix", amount: 15, category: "Entertainment", date: "2024-08-18" },
     { id: "4", title: "Coffee", amount: 25, category: "Food", date: "2024-08-17" },
     { id: "5", title: "Utilities", amount: 150, category: "Bills", date: "2024-08-16" },
+    { id: "6", title: "Stock Purchase", amount: 500, category: "Investment", date: "2024-08-15" },
   ]);
 
   const [budget] = useState(2000);
