@@ -21,7 +21,7 @@ export const BudgetOverview = ({ budget, spent, saved }: BudgetOverviewProps) =>
           <DollarSign className="h-4 w-4 text-primary" />
         </CardHeader>
         <CardContent className="relative">
-          <div className="text-2xl font-bold text-foreground">${budget.toLocaleString()}</div>
+          <div className="text-2xl font-bold text-foreground">₹{budget.toLocaleString()}</div>
           <p className="text-xs text-muted-foreground">Monthly budget limit</p>
         </CardContent>
       </Card>
@@ -35,7 +35,7 @@ export const BudgetOverview = ({ budget, spent, saved }: BudgetOverviewProps) =>
           <TrendingUp className="h-4 w-4 text-expense" />
         </CardHeader>
         <CardContent className="relative">
-          <div className="text-2xl font-bold text-foreground">${spent.toLocaleString()}</div>
+          <div className="text-2xl font-bold text-foreground">₹{spent.toLocaleString()}</div>
           <div className="flex items-center space-x-2">
             <div className="flex-1 bg-muted rounded-full h-2">
               <div 
@@ -57,7 +57,7 @@ export const BudgetOverview = ({ budget, spent, saved }: BudgetOverviewProps) =>
           <PiggyBank className="h-4 w-4 text-success" />
         </CardHeader>
         <CardContent className="relative">
-          <div className="text-2xl font-bold text-foreground">${saved.toLocaleString()}</div>
+          <div className="text-2xl font-bold text-foreground">₹{saved.toLocaleString()}</div>
           <p className="text-xs text-muted-foreground">
             {saved > 0 ? "Great saving!" : "Consider reducing expenses"}
           </p>

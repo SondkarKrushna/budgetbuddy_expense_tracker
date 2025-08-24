@@ -15,6 +15,7 @@ const getCategoryColor = (category: string) => {
     "Bills": "bg-expense/10 text-expense border-expense/20",
     "Shopping": "bg-accent/10 text-accent border-accent/20",
     "Healthcare": "bg-muted text-muted-foreground border-border",
+    "Investment": "bg-primary/20 text-primary border-primary/30",
     "Other": "bg-muted text-muted-foreground border-border",
   };
   return colors[category] || colors["Other"];
@@ -61,8 +62,7 @@ export const ExpenseList = ({ expenses }: ExpenseListProps) => {
                   </div>
                 </div>
                 <div className="flex items-center space-x-1 text-lg font-bold text-foreground">
-                  <DollarSign className="h-4 w-4" />
-                  <span>{expense.amount.toFixed(2)}</span>
+                  <span>₹{expense.amount.toFixed(2)}</span>
                 </div>
               </div>
             ))

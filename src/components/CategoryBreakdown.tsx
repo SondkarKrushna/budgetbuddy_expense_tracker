@@ -61,7 +61,7 @@ export const CategoryBreakdown = ({ expenses }: CategoryBreakdownProps) => {
                     borderRadius: "8px",
                     color: "hsl(var(--foreground))"
                   }}
-                  formatter={(value) => [`$${value}`, "Amount"]}
+                  formatter={(value) => [`₹${value}`, "Amount"]}
                 />
               </PieChart>
             </ResponsiveContainer>
@@ -77,7 +77,7 @@ export const CategoryBreakdown = ({ expenses }: CategoryBreakdownProps) => {
                   />
                   <span className="text-sm font-medium text-foreground">{category.name}</span>
                 </div>
-                <span className="text-sm font-bold text-foreground">${category.value}</span>
+                <span className="text-sm font-bold text-foreground">₹{category.value}</span>
               </div>
             ))}
           </div>
